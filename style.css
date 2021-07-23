@@ -1,0 +1,1112 @@
+ * {
+ 	margin:0 ;
+ 	padding: 0;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/poor.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;height: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links ul li:hover::after{    
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 140px;
+
+}
+.text-box h3{
+    font-size: 30px;
+
+}
+.text-box h2{
+    font-size:50px ;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 25px;
+
+
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s ;
+}
+ nav .fa{
+    display: none;
+ }
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 60px;
+}
+   
+    .text-box h2{
+         font-size: 20px ;
+    }
+    .text-box h3{
+        font-size: 15px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+   .nav-links ul li{
+     display: block;
+   }
+   .nav-links{
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+
+   }
+   .nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+   }
+   .nav-links ul {
+    padding: 30px;
+   }
+}
+.Donor{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+p{
+    font-size: 25px;
+    font-weight: 150;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    border: 1px solid black;
+    background: red;
+    transition: 1s ;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.donor-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+.donor-col img{
+    height: 190px;
+    width: 190px;
+}
+.donor-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.donor-col p{
+    font-size: 15px;
+}
+.donor-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+.Receiver{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    border: 1px solid black;
+    background: red;
+    transition: 1s ;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Receiver-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+    margin-top: 5%;
+}
+.Receiver-col img{
+    height: 190px;
+    width: 190px;
+}
+.Receiver-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.Receiver-col p{
+    font-size: 15px;
+}
+.Receiver-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #fff3f3;
+}
+.row{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 31%;
+    margin-bottom: 2%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+    .footer-col h3{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+    color: black;
+
+}
+.footer-col p{
+    font-size: 18px;
+    color: black;
+}
+.footer-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}   
+
+
+
+
+.header1{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/poor4.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+
+
+.about-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.about-box h1{
+    font-size: 100px;
+
+}
+
+
+.about-box p{
+    margin: 10px 0px 40px;
+    font-size: 25px;
+
+
+}
+.about-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: gold;
+    border: 1px solid gold;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.about-btn:hover{
+    border: 1px solid black;
+    background: gold;
+    transition: 1s ;
+    color: black;
+}
+ nav .fa{
+    display: none;
+ }
+
+
+@media(max-width: 700px){
+    .about-box h1{
+        font-size: 60px;
+}
+   
+    .about-box h2{
+         font-size: 20px ;
+    }
+    .about-box h3{
+        font-size: 15px;
+    }
+    .about-box p{
+        font-size: 15px;
+    }
+   .nav-links ul li{
+     display: block;
+   }
+   .nav-links{
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+
+   }
+   .nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+   }
+   .nav-links ul {
+    padding: 30px;
+   }
+}
+.donator{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+p{
+    font-size: 25px;
+    font-weight: 150;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button1 {
+    display: inline-block;
+    text-decoration: none;
+    color: gold;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button1:hover{
+    color: black;
+    border: 1px solid black;
+    background: gold;
+    transition: 1s ;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.donator-col{
+    flex-basis: 45%;
+    background: #ffdbac;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 0%;
+}
+.donator-col img{
+    height: 190px;
+    width: 190px;
+}
+.donator-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.donator-col p{
+    font-size: 15px;
+}
+.donator-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2.0);
+}
+@media(max-width: 700px){
+    .row1{
+        flex-direction: column;
+    }
+}
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button2 {
+    display: inline-block;
+    text-decoration: none;
+    color: gold;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button2:hover{
+    color: black;
+    border: 1px solid black;
+    background: gold;
+    transition: 1s ;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-col{
+    flex-basis: 31%;
+    background: #ffdbac;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+    margin-top: 5%;
+}
+.project-col img{
+    height: 190px;
+    width: 190px;
+}
+.project-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.project-col p{
+    font-size: 15px;
+}
+.project-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.footer1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #ffdbac;
+}
+.row{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer1-col{
+    flex-basis: 31%;
+    margin-bottom: 2%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+    .footer1-col h3{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+    color: black;
+
+}
+.footer1-col p{
+    font-size: 18px;
+    color: black;
+}
+.footer1-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+} 
+  .header2{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/medicine3.png);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+.donor-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+.donor-box h1{
+    font-size: 100px;
+
+}
+
+
+.donor-box p{
+    margin: 10px 0px 40px;
+    font-size: 25px;
+
+
+}
+.donatenow-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    border: 1px solid gold;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.donatenow-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s ;
+    color: black;
+}
+ nav .fa{
+    display: none;
+ }
+
+
+@media(max-width: 600px){
+    .donor-box h1 {
+font-size: 40px;
+
+
+}
+     .donor-box p {
+        font-size: 10px;
+
+     }
+  
+}
+ .Donor1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+h1{
+    font-size: 60px;
+    font-weight: 400;
+
+}
+p{
+    font-size: 25px;
+    font-weight: 150;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button3 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid red;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button3:hover{
+    color: red;
+    border: 1px solid black;
+    background: lightblue;
+    transition: 1s ;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.donor1-col{
+    flex-basis: 31%;
+    background: lightblue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5%;
+
+}
+.donor1-col img{
+    height: 190px;
+    width: 190px;
+}
+.donor1-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.donor1-col p{
+    font-size: 15px;
+}
+.donor1-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.todonate{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.todonate-col{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5%;
+
+}
+.todonate-col img{
+    margin:5%;
+    height:400px;
+    width:800px;
+
+}
+.todonate-col h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.todonate-col p{
+    margin:2%
+    font-size: 30px;
+}
+.todonate-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 800px){
+    .todonate{
+        flex-direction: row;}
+    .todonate-col img {
+        height: 200px;
+        width: 400px;
+    
+        }
+    }
+.footer2{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: lightblue;
+}
+.row3{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer2-col{
+    flex-basis: 31%;
+    margin-bottom: 2%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+.footer2-col h3{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+    color: black;
+
+}
+.footer2-col p{
+    font-size: 18px;
+    color: black;
+}
+.footer2-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}   
+
+
+ .header3{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(images/medicine5.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.nav-links1{
+    flex: 1;
+    text-align: right;
+}
+.nav-links1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links1 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.nav-links1 ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links1 ul li:hover::after{    
+    width: 100%;
+}
+
+.receiver-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -60%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+.receiver-box h1{
+    font-size: 80px;
+
+}
+
+
+.receiver-box p{
+    margin: 10px 0px 40px;
+    font-size: 20px;
+
+
+}
+.receiver-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.receiver-btn:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 1s ;
+    color: black;
+}
+ nav .fa{
+    display: none;
+ }
+
+
+@media(max-width: 700px){
+    .text-box h1{
+font-size: 60px;
+}
+}
+ .receiver1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+h1{
+    font-size: 60px;
+    font-weight: 400;
+
+}
+p{
+    font-size: 25px;
+    font-weight: 150;
+    line-height: 25px;
+    padding: 10px; 
+}
+.button4 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gold;
+    padding: 20px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button4:hover{
+    color: red;
+    border: 1px solid black;
+    background: gold;
+    transition: 1s ;
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.receiver1-col{
+    flex-basis: 46%;
+    background: gold;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5%;
+
+}
+.receiver1-col img{
+    height: 250px;
+    width: 250px;
+}
+.receiver1-col h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.receiver1-col p{
+    font-size: 20px;
+}
+.receiver1-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.toreceive{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.toreceive-col{
+    flex-basis: 50%;
+    background: gold;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5%;
+
+}
+.toreceive-col img{
+    margin:5%;
+    height:400px;
+    width:800px;
+
+}
+.toreceive-col h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+
+}
+.toreceive-col p{
+    margin:2%
+    font-size: 30px;
+}
+.toreceive-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+        }
+.footer3{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: gold;
+}
+.row4{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer3-col{
+    flex-basis: 31%;
+    margin-bottom: 2%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+.footer3-col h3{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px ;
+    color: black;
+
+}
+.footer3-col p{
+    font-size: 18px;
+    color: black;
+}
+.footer3-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}   
